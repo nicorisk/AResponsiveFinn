@@ -1,0 +1,406 @@
+@font-face{
+	font-family: 'Lato';
+	src: url('fonts/Lato-Regular.ttf');
+	
+	font-family: 'Lato-Bold';
+	src: url('fonts/Lato-Bold.ttf');
+}
+@font-face{
+	font-family: 'Lato-Italic';
+	src: url('fonts/Lato-Italic.ttf');
+
+}
+/* reset css */
+html, body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Lato', Calibri, sans-serif;
+	scroll-behavior: smooth;
+}
+img{
+	max-width: 100%;
+	height: auto;
+}
+header nav a{
+	text-decoration: none;
+}
+/* font-families */
+#nav-link a, h2, h3{
+	text-transform: uppercase;
+	font-family: 'Lato-Bold';
+}
+/* Header */
+header{
+	background-color:#79b7ea;
+	padding-bottom: 5%;
+}
+h1{
+	display: none;
+}
+#logo{
+	width: 70%;
+	padding: 15px 15%;
+}
+#nav-link{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+#nav-link a{
+	padding: 2%;
+	color: #000;
+	transition-duration: 0.5s;
+	font-size: 1.3rem;
+}
+#nav-link a:visited{
+	color: #000;
+}
+#nav-link a:active{
+	color: #000;
+}
+#nav-link a:hover{
+	color: #fff;
+	background-color: #93c3ea;
+	transition-duration: 0.5s;
+}
+@media screen and (min-width: 1024px){
+	header{
+		display: flex;
+		padding-bottom: 0;
+	}
+	#logo{
+		width: 30%;
+	}
+	#nav-link{
+		width: 70%;
+		display: inline-block;
+		padding-top: 50px;
+	}
+}
+/*main*/
+/*general*/
+main{
+	background-image: url('img/pattern.jpg');
+}
+h2{
+	display: none;
+}
+article{
+	background-color: #fff;
+}
+article p{
+	margin: 5% 5%;
+	font-size: 1.1rem;
+}
+#container-gmap{
+	margin: 0;
+	padding: 0;
+}
+iframe{
+	width: 100%;
+	height: 300px;
+	border: 0;
+}
+h3{
+	border-bottom: solid 1px black;
+	font-size: 1.25rem;
+	padding-bottom: 1%;
+	margin: 5% 5%;
+}
+.lien-texte{
+	text-decoration: none;
+	color: #2f86ce;
+	transition-duration: 0.5s;
+}
+.lien-texte:visited{
+	color: #2f86ce;
+}
+.lien-texte:active{
+	color: #2f86ce;
+}
+.lien-texte:hover{
+	color: #000;
+	transition-duration: 0.5s;
+}
+@media screen and (min-width: 1024px){
+	iframe{
+		padding-left: 5%;
+		max-width: 500px;
+	}
+	article.flex-article h3{
+		border-bottom: solid 1px black;
+		font-size: 1.25rem;
+		padding-bottom: 1%;
+		margin: 2% 2%;
+		text-align: left;
+	}
+	article p{
+		margin: 2% 2%;
+		font-size: 1.1rem;
+	}
+	article.flex-article{
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+		margin-top: 3%;
+		justify-content: center;
+		
+	}
+	article.flex-article p{
+		text-align: justify;
+		margin: 2% 5%;
+	}
+	.flex-text{
+		width: 48%;
+		border: groove 3px #b2b2b2;
+	}
+	#container-gmap{
+		width: 550px;
+	}
+	.no-flex{
+		display: block;
+	}
+}
+/*accueil*/
+.image-article{
+	margin: 0 5% 0 5%;
+}
+@media screen and (min-width: 1024px){
+	.image-article{
+		margin: 0 2% 0 2%;
+		max-width: 500px;
+		height: auto;
+		order: 1;
+	}
+	.puzzle{
+		order: 2;
+	}
+}
+/*animaux*/
+aside{
+	background-color: #fff;
+}
+ul li a{
+	text-decoration: none;
+	text-transform: capitalize;
+	color: #2f86ce;
+	font-size: 1.15rem;
+}
+ul li{
+	padding-bottom: 5%;
+}
+.container-animaux{
+	margin: 0 5% 0 5%;
+	width: 90%;
+	height: 300px;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+#renne{
+	background-image: url('img/renne-petit.jpg');
+}
+#lynx{
+	background-image: url('img/lynx-petit.jpg');
+}
+#phoque{
+	background-image: url('img/phoque-petit.jpg');
+}
+#chouette{
+	background-image: url('img/chouette-petit.jpg');
+}
+#loup{
+	background-image: url('img/loup-petit.jpg');
+}
+#glouton{
+	background-image: url('img/glouton-petit.jpg');
+}
+#tropmignon{
+	background-image: url('img/hermine-petit.jpg');
+}
+@media screen and (min-width: 1024px){
+	ul li{
+		padding-bottom: 0;
+	}
+	ul{
+		padding-bottom: 2%;
+		margin-left: 2%;
+	}
+	aside h3{
+		margin: 2% 0 0 2%;
+	}
+	article h3{
+		text-align: center;
+		padding-top: 3%;
+	}
+	article p{
+		margin: 1% 20% 1% 20%;
+		text-align: center;
+		padding-bottom: 3%;
+	}
+	.article-animaux{
+		flex-direction: column;
+		border: groove 3px #b2b2b2;
+		text-align: center;
+	}
+	.article-animaux h3{
+		border-bottom: none;
+		padding: 0;
+		margin: 3% 3%;
+	}
+	.article-animaux p{
+		border-bottom: none;
+		padding-bottom: 3%;
+	}
+	.container-animaux{
+		margin: 0;
+		width: 100%;
+		height: 900px;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+	#renne{
+		background-image: url('img/renne.jpg');
+	}
+	#lynx{
+		background-image: url('img/lynx.jpg');
+	}
+	#phoque{
+		background-image: url('img/phoque.jpg');
+	}
+	#chouette{
+		background-image: url('img/chouette.jpg');
+	}
+	#loup{
+		background-image: url('img/loup.jpg');
+	}
+	#glouton{
+		background-image: url('img/glouton.jpg');
+	}
+	#tropmignon{
+		background-image: url('img/hermine.jpg');
+	}
+}
+/*contact*/
+form{
+	display: flex;
+	justify-content: center;
+}
+fieldset{
+	width: 100%;
+	border: none;
+	background-color: #fff;
+	font-family: 'Lato-Bold', Calibri, sans-serif;
+}
+legend{
+	padding-top: 15%;
+}
+.flex-formulaire{
+	display: flex;
+	flex-flow: column wrap;
+}
+.flex-formulaire input{
+	height: 25px;
+	width: 70%;
+	margin-top: 2%;
+	border-radius: 5px;
+	border: groove 2px #b2b2b2;
+}
+textarea{
+	height: 80px;
+	width: 98%;
+	display: block;
+	margin-top: 2%;
+	border-radius: 5px;
+	border: groove 2px #b2b2b2;
+}
+#okContact{
+	width: 30%;
+	height: 40px;
+	margin-top: 2%;
+	margin-left: 35%;
+}
+@media screen and (min-width: 1024px){
+	fieldset{
+		width: 50%;
+		text-align:center;
+	}
+	legend{
+		padding-top: 5%;
+	}
+	.flex-formulaire{
+		width: 30%;
+		flex-flow: row wrap;
+	}
+	#nom, #prenom, #email{
+		width: 100%;
+		height: 70%;
+		border-radius: 5px;
+		display: block;
+		font-size: 1rem;
+		font-family: 'Lato', Calibri, sans-serif;
+	}
+	textarea{
+		margin: 5% 0 0 0;
+		display: block;
+		width: 100%;
+		height: 100px;
+		border-radius: 5px;
+		font-size: 1rem;
+		font-family: 'Lato', Calibri, sans-serif;
+	}
+	#okContact{
+		margin-top: 2%;
+		margin-left: 0;
+		width: 15%;
+		height: 30px;
+	}
+	.container-formulaire{
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: space-around;
+	}
+}
+/*informations*/
+.container-mabouille{
+	margin-left: 5%;
+	max-width: 50%;
+}
+@media screen and (min-width: 1024px){
+	#article-information{
+		display: flex;
+		flex-flow: row wrap;
+	}
+	#article-information h3{
+		width: 100%;
+		margin: 2% 2%;
+	}
+	#article-information p{
+		margin: 0;
+		font-size: 1.1rem;
+		padding-bottom: 2%;
+		text-align: left;
+	}
+	.container-mabouille{
+		width: 20%;
+	}
+	#article-information figure{
+		display: flex;
+	}
+	.img-info{
+		width: 47%;
+		margin: 3% 2%;
+	}
+}
+/*footer*/
+footer{
+	background-color:#79b7ea;
+	font-family: 'Lato-Italic', sans-serif;
+	color: #fff;
+	padding: 2%;
+	text-align: center;
+}
+@media screen and (min-width: 1024px){
+	footer{
+		max-width: 100%;
+	}
+}

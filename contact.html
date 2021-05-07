@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>La Finlande - Accueil</title>
+	</head>
+	<body>
+		<header>
+			<h1>Visiter la Finlande</h1>
+			<div id="logo">
+				<img src="img/logo-finland.png" alt="Logo avec drapeau de la Finlande et le texte Visit Finland"/>
+			</div>
+			<nav id="nav-link">
+				<a href="index.html">Accueil</a>
+				<a href="animaux.html">Animaux</a>
+				<a href="informations.html">Informations</a>
+				<a href="contact.html">Contact</a>
+			</nav>
+		</header>
+		<main>
+			<form action="mailto:nicolas.debeve@std.heh.be" method="post" autocomplete="on" enctype="text/plain">
+				<fieldset>
+					<legend>Une suggestion ? Une demande d'article ? Dites-nous tout !</legend>
+					<div class="container-formulaire">
+						<div class="flex-formulaire">
+							<label for="nom">Nom</label>
+							<input id="nom" name="nom" type="text" placeholder="Dubois" required>
+						</div>
+						<div class="flex-formulaire">
+							<label for="prenom">Prénom</label>
+							<input id="prenom" name="prenom" type="text" placeholder="Jaakko" required>
+						</div>
+						<div class="flex-formulaire">
+							<label for="email">Email</label>
+							<input id="email" name="email" type="text" placeholder="Ex: question@VisitFinland.com" required>
+						</div>
+					</div>
+					<textarea name="livraison" placeholder="Ecrivez votre message ici..."></textarea>
+					<input id="okContact" type="submit" name="okContact" value="Envoyer">
+				</fieldset>
+			</form>
+		</main>
+		<footer id="footer-contact">
+			Copyright 2021 - Site web réalisé dans le cadre du cours Développement Web de la Haute Ecole en Hainaut - Nicolas Debève IRT1 Groupe 5
+		</footer>
+	</body>
+</html>

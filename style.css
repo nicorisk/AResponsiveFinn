@@ -340,9 +340,9 @@ textarea{
 		font-family: 'Lato', Calibri, sans-serif;
 	}
 	textarea{
-		margin: 5% 0 0 0;
+		margin: 5% 2% 0 2%;
 		display: block;
-		width: 100%;
+		width: 96%;
 		height: 100px;
 		border-radius: 5px;
 		font-size: 1rem;
